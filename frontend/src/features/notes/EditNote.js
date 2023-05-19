@@ -1,4 +1,3 @@
-import React from 'react'
 import { useParams } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 import { selectNoteById } from './notesApiSlice'
@@ -13,7 +12,6 @@ const EditNote = () => {
 
     const content = note && users ? <EditNoteForm note={note} users={users} /> : <p>Loading...</p>
 
-    return content;
+    return content
 }
-
 export default EditNote
