@@ -1,11 +1,11 @@
 import { useSelector } from "react-redux";
-import { selectCurrenToken } from '../features/auth/authSlice'
+import { selectCurrentToken } from '../features/auth/authSlice'
 import jwtDecode from 'jwt-decode'
 
 import React from 'react'
 
 const useAuth = () => {
-    const token = useSelector(selectCurrenToken)
+    const token = useSelector(selectCurrentToken)
     let isManager = false;
     let isAdmin = false;
     let status = "Employee";
